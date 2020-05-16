@@ -1,0 +1,2 @@
+module directed_graph {
+}
