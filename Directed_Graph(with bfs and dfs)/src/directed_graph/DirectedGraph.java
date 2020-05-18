@@ -24,12 +24,11 @@ public DirectedGraph() {
 public void dfsTraversal() {
 	for (int i = 0; i < n; i++) {
 		vertexList[i].state = INITIAL;// make all vertices state initial
-		Scanner in = new Scanner(System.in);
-		System.out.println("Enter starting vertex for depth first search : ");
-		String s = in.next();// enter start vertex 
-		dfs(getIndex(s));// get the index of start vertex and call the dfs
-		
 	}
+	Scanner in = new Scanner(System.in);
+	System.out.println("Enter starting vertex for depth first search : ");
+	String s = in.next();// enter start vertex 
+	dfs(getIndex(s));// get the index of start vertex and call the dfs
 }
 // his methot just traverse vertices reachable from start 
 private void dfs(int v) {
@@ -55,8 +54,9 @@ public void dfsTraversal_All() {
 	int v;
 	for (v = 0; v < n; v++) {
 		vertexList[v].state=INITIAL;
+	}
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter starrting vertex for dfs : ");
+		System.out.println("Enter starting vertex for dfs_all : ");
 		String s = scan.next();
 		dfs(getIndex(s));
 
@@ -69,7 +69,7 @@ public void dfsTraversal_All() {
 		}
 		
 		
-	}
+	
 }
 
 public int vertices() {// returns total number vertices in the graph
@@ -81,6 +81,7 @@ public int edges() {// returns total number of edges in the graph
 
 public void display() {// displays the adjacency matrix
 	// we print our 2d array adj row by row
+	System.out.println("display method");
 	for (int i = 0; i < n; i++) {
 		
 		for (int j = 0; j < n; j++) 
@@ -220,9 +221,16 @@ public int inDegree(String s) {
 		if(adj[u][v])
 			in++;
 		}
+
 	
 	return in;//returns the indegree 
 	}
+
+public void degreeOfVertex(String s) {
+	System.out.println(s + " Vertex Degree is : ");
+	System.out.println(inDegree(s) + outdegree(s));
+	//return inDegree(s) + outdegree(s); 
+}
 
 
 

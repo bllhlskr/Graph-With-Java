@@ -25,10 +25,17 @@ public static void main(String[] args) {
 	g.insertEdge("Three","Eight");
 	g.insertEdge("Five","Six");
 	g.insertEdge("Seven","Six");
-	g.display();
-	g.bfsTraversal();
-	g.bfsTraversal_All();
+	
+	
+	
+	//g.display();
+	//g.degreeOfVertex("One");
+	//g.bfsTraversal();
+	//g.bfsTraversal_All();
 	//g.inDegree("zero");
+	g.dfsTraversal();
+	//g.dfsTraversal_All();
+	//g.bfsTraversal_All();
 	//System.out.println(g.inDegree("Two"));
 	//System.out.println("vertices = "+ g.vertices() + ", Edges  " + g.edges());
 }
