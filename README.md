@@ -1,6 +1,7 @@
 <h1> Graphs With Java</h1>
 A: A method to find the degree of a vertex: 
 In the outdegree method, we get the associated index and find how many entries are true in the row of index we got earlier, and return the outdegree. In the inDegree method, we get the associated index just like in outdegree method, and then find how many entries are true in the column of index we got earlier, and return the indegree. The “vertexofdegree” method adds indegree and outdegree and gives the result. In output, vertexofdegree is called. 
+<img src ='img/1'></img>
  
 B: A Method for Breadth First Search:
 When the user enters the name of the start vertex, firstly the start vertex is visited, then all the vertices adjacent to the start vertex are visited. Then the adjacent vertices are visited one by one and their adjacent vertices are visited.  In “bfs” method, “qu.add(v)” line inserts start vertex to the queue, then change its state to waiting. When the vertex is removed from the queue, its state is changed to “visited”. If i is adjacent to v and it is in initial state, its added to the queue and its state is changed to “waiting”.	
